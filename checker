@@ -1,0 +1,31 @@
+#!/bin/bash
+
+echo
+echo Start checking...
+echo
+
+g++ generator.cpp -o generator
+g++ task1.cpp -o task1
+g++ task2.cpp -o task2
+
+while true
+do
+	./generator > test.in
+	./task1 < test.in > ans1.out
+	./task2 < test.in > ans2.out
+
+	diff -q -Z ans1.out ans2.out > /dev/null
+	if [ $? == 1 ]
+	then
+		echo DIFF
+		break;
+	else
+		echo -n .
+	fi
+done
+
+echo
+echo DONE
+
+echo
+
