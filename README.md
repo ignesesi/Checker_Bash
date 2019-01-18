@@ -1,7 +1,7 @@
 
-The programs, which you are testing, are named **task1.cpp** and **task2.cpp** and must be in the same directory in which is the **checker**.
+The programs, which you are testing, must be named **task1.cpp** and **task2.cpp** and must be in the same directory in which is the **checker**.
 
-The test generator is named **generator.cpp** and also must be in the same directory.
+The test generator must be named **generator.cpp** and also must be in the same directory.
 
 The result of the generator is saved in **test.in**. The result of **task1.cpp** is saved in **ans1.out** and the result of **task2.cpp** is in **ans2.out**.
 
